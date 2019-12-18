@@ -19,8 +19,8 @@ PODS:
     - DoubleConversion
     - glog
   - glog (0.3.5)
-  - Passbase (1.7.0):
-    - Sentry (~> 4.3.1)
+  - Passbase (1.7.1):
+    - Sentry
     - ZoomAuthenticationHybrid (~> 7.0.18)
   - RCTRequired (0.61.5)
   - RCTTypeSafety (0.61.5):
@@ -223,9 +223,9 @@ PODS:
     - React-cxxreact (= 0.61.5)
     - React-jsi (= 0.61.5)
     - ReactCommon/jscallinvoker (= 0.61.5)
-  - Sentry (4.3.4):
-    - Sentry/Core (= 4.3.4)
-  - Sentry/Core (4.3.4)
+  - Sentry (4.4.3):
+    - Sentry/Core (= 4.4.3)
+  - Sentry/Core (4.4.3)
   - Yoga (1.14.0)
   - ZoomAuthenticationHybrid (7.0.18)
 
@@ -262,13 +262,12 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - boost-for-react-native
     - Sentry
-  https://github.com/facetec/cocoapods-specs:
-    - ZoomAuthenticationHybrid
   https://github.com/passbase/cocoapods-specs:
     - Passbase
-  trunk:
-    - boost-for-react-native
+  https://github.com/passbase/zoom-cocoapods-specs.git:
+    - ZoomAuthenticationHybrid
 
 EXTERNAL SOURCES:
   DoubleConversion:
@@ -331,7 +330,7 @@ SPEC CHECKSUMS:
   FBReactNativeSpec: 118d0d177724c2d67f08a59136eb29ef5943ec75
   Folly: 30e7936e1c45c08d884aa59369ed951a8e68cf51
   glog: 1f3da668190260b06b429bb211bfbee5cd790c28
-  Passbase: ae12642a86b89bbd9296fc082e2dc1df5c904fe8
+  Passbase: b73a70a0970a85bbeb067ceaee755a897ff3c050
   RCTRequired: b153add4da6e7dbc44aebf93f3cf4fcae392ddf1
   RCTTypeSafety: 9aa1b91d7f9310fc6eadc3cf95126ffe818af320
   React: b6a59ef847b2b40bb6e0180a97d0ca716969ac78
@@ -352,10 +351,10 @@ SPEC CHECKSUMS:
   React-RCTText: 9ccc88273e9a3aacff5094d2175a605efa854dbe
   React-RCTVibration: a49a1f42bf8f5acf1c3e297097517c6b3af377ad
   ReactCommon: 198c7c8d3591f975e5431bec1b0b3b581aa1c5dd
-  Sentry: 26f0e6492b103e87434d1a5eea2d241a36f2c2a2
+  Sentry: 14bdd673870e8cf64932b149fad5bbbf39a9b390
   Yoga: f2a7cd4280bfe2cca5a7aed98ba0eb3d1310f18b
-  ZoomAuthenticationHybrid: 7e3a7ef2c58762704afca243cf02dc9bd50e2753
+  ZoomAuthenticationHybrid: 74e0409c2c7fe707a3edd236adb1efe37565545e
 
-PODFILE CHECKSUM: f7d35bca6d7842d8608211a6249d63a041e810f5
+PODFILE CHECKSUM: 60d128e99ff1f7058671be483e5822b0692c1034
 
 COCOAPODS: 1.8.4
