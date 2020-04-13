@@ -175,7 +175,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   btnText: {
-    color: 'white',
+    color: '#1a4df2',
     fontWeight: 'bold',
   },
   component: {
