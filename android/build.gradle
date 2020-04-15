@@ -38,7 +38,7 @@ allprojects {
         maven { url 'https://jitpack.io' }
         // add following maven block
         maven {
-            url 'http://maven.facetec.com'
+            url 'https://button.passbase.com/__android'
         }
     }
 }
