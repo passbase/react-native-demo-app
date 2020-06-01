@@ -12,7 +12,7 @@ This App shows an example integration of the Passbase iOS SDK into an App. Befor
 * Go into the `App.js` & replace YOUR_PUBLISHABLE_API_KEY with your own API key in line 58.
 * Select a device and build & run the App (You might have to adjust the App's signing to your own)
 
-## Install the App & Run (iOS)
+## Install the App & Run (android)
 * cd into the project and run `yarn` 
 * Open the android folder using android studio
 * Go into the `App.js` & replace YOUR_PUBLISHABLE_API_KEY with your own API key in line 58.
