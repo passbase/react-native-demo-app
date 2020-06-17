@@ -1,5 +1,5 @@
 source 'https://github.com/CocoaPods/Specs.git'
-source 'https://github.com/passbase/zoom-cocoapods-specs.git'
+source 'https://github.com/passbase/zoomauthentication-cocoapods-specs.git'
 source 'https://github.com/passbase/cocoapods-specs.git'
 
 platform :ios, '13.0'
