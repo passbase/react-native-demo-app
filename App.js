@@ -61,6 +61,7 @@ class App extends React.Component {
         );
         console.log('initRes: ', res);
         if (res && res.success) {
+          PassbaseModule.setTestMode(true)
           PassbaseModule.setLoadingIndicatorColor('#A49E8D');
           PassbaseModule.setActionButtonBgColor('#504136');
           PassbaseModule.setActionButtonDeactivatedBgColor('#d2d2d2');
