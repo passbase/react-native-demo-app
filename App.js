@@ -4,36 +4,39 @@ import {NativeEventEmitter} from 'react-native';
 import {PassbaseSDK, PassbaseButton} from '@passbase/react-native-passbase';
 
 const App = () => {
-  const initPassbase = () => {
-    PassbaseSDK.initialize(
+  const initPassbase = async () => {
+    const res = await PassbaseSDK.initialize(
       '098336c09ed3a14acf40f78d9afa29162df2d177daaa65f7c6ed7fda1d6eef9e',
-    )
-      .then((res) => {
-        console.log(res);
-      })
-      .catch((err) => console.log(err));
+    );
+    if (res && res.success) {
+      // Do your stuff here, you have successfully initialized.
+      console.log(res);
+    } else {
+      // check res.message for the error message
+      console.log(res.message);
+    }
   };
   useEffect(() => {
     initPassbase();
-    this.subscription = new NativeEventEmitter(PassbaseSDK);
-    this.subscription.addListener('onError', (event) => {
+    const subscription = new NativeEventEmitter(PassbaseSDK);
+    subscription.addListener('onError', (event) => {
       console.log('onError');
     });
-    this.subscription.addListener('onFinish', (event) => {
+    subscription.addListener('onFinish', (event) => {
       console.log('onFinish');
       console.log(
         'Identity Access Key completed with: ',
         event.identityAccessKey,
       );
     });
-    this.subscription.addListener('onStart', (event) => {
+    subscription.addListener('onStart', (event) => {
       console.log('onStart');
     });
     return () => {
-      if (this.subscription) {
-        this.subscription.removeListener('onError', (event) => {});
-        this.subscription.removeListener('onFinish', (event) => {});
-        this.subscription.removeListener('onStart', (event) => {});
+      if (subscription) {
+        subscription.removeListener('onError', (event) => {});
+        subscription.removeListener('onFinish', (event) => {});
+        subscription.removeListener('onStart', (event) => {});
       }
     };
   }, []);
