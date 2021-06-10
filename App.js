@@ -5,7 +5,7 @@ import {PassbaseSDK, PassbaseButton} from '@passbase/react-native-passbase';
 
 const App = () => {
   const initPassbase = async () => {
-    const res = await PassbaseSDK.initialize();
+    const res = await PassbaseSDK.initialize(/*YOUR_PUBLISBALE_API_KEY*/);
     if (res && res.success) {
       // Do your stuff here, you have successfully initialized.
       console.log(res);
