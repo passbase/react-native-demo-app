@@ -10,9 +10,9 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@passbase/react-native-passbase": "^2.1.8",
     "react": "17.0.1",
-    "react-native": "0.64.0"
+    "react-native": "0.64.0",
+    "@passbase/react-native-passbase": "^2.5.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
