@@ -43,7 +43,7 @@ const App = () => {
       <StatusBar barStyle="dark-content" />
       <SafeAreaView style={styles.container}>
         <Text style={styles.titleText}>Welcome to the Passbase Demo App</Text>
-        <PassbaseButton style={{backgroundColor: 'white'}} />
+        <PassbaseButton />
       </SafeAreaView>
     </>
   );

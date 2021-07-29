@@ -3,16 +3,16 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "android": "react-native run-android",
-    "ios": "react-native run-ios",
+    "android": "npx react-native run-android",
+    "ios": "npx react-native run-ios",
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint ."
   },
   "dependencies": {
+    "@passbase/react-native-passbase": "^2.7.5",
     "react": "17.0.1",
-    "react-native": "0.64.0",
-    "@passbase/react-native-passbase": "^2.5.0"
+    "react-native": "0.64.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",

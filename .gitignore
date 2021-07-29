@@ -62,7 +62,6 @@ buck-out/
 # CocoaPods
 *.lock
 environment.js
-yarn.lock
 # keystores & releases.
 android/app/keystores/
 android/app/release/
