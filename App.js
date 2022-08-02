@@ -4,8 +4,11 @@ import {NativeEventEmitter} from 'react-native';
 import {PassbaseSDK, PassbaseButton} from '@passbase/react-native-passbase';
 
 const App = () => {
+  const apiKey = 'YOUR_API_KEY';
+  const customerPayload = 'YOUR_CUSTOMER_PAYLOAD';
+
   const initPassbase = async () => {
-    const res = await PassbaseSDK.initialize(/*YOUR_PUBLISBALE_API_KEY*/);
+    const res = await PassbaseSDK.initialize(apiKey, customerPayload);
     if (res && res.success) {
       // Do your stuff here, you have successfully initialized.
       console.log(res);
@@ -31,13 +34,10 @@ const App = () => {
       console.log('onStart');
     });
     return () => {
-      if (subscription) {
-        subscription.remove('onError', event => {});
-        subscription.remove('onFinish', event => {});
-        subscription.remove('onStart', event => {});
-      }
+      subscription.removeAllListeners(subscription);
     };
   }, []);
+
   return (
     <>
       <StatusBar barStyle="dark-content" />
