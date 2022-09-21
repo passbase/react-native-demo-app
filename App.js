@@ -1,7 +1,13 @@
 import React, {useEffect} from 'react';
 import {SafeAreaView, StatusBar, Text, StyleSheet} from 'react-native';
 import {NativeEventEmitter} from 'react-native';
-import {PassbaseSDK, PassbaseButton} from '@passbase/react-native-passbase';
+import {PassbaseSDK, PassbaseButton} from '@passbase/react-native-passbase-v3';
+
+/*
+  Only customers on the Passbase Enterprise beta program should use V3 of the SDK.
+  If you are not on the Passbase Enteprise beta program,
+  you should use V2 of the SDK as V3 contains breaking changes.
+*/
 
 const App = () => {
   const apiKey = 'YOUR_API_KEY';
